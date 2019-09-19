@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <title>wedding memory book</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body id="roses">
+    <div id = "passBoxHide">
+        <input type="password" name="passPage" id="pass" placeholder="Enter the password">
+    <button id="enter">Enter</button>
+    <h3 id ="error">Try Again</h3>
+    </div>
+    <h1 id="header">Happily Ever After</h1>
+    <img src="book.png" id="book">
+    <div id = "msgBox">
+        <input type="text" name="userName"  id="name" placeholder="Enter your name"><br>
+        <input type="text" name="message" id="message" placeholder="Enter your message" height="50" width="50">
+        <br>
+        <button id="submit">submit message</button>
+        <ul id="ull">
+        </ul>
+        
+    </div>
+    <script type="text/javascript">
+        var pass = document.getElementById("pass");
+        console.log(pass);
+        // var rightPass = "yara";
+        $("#msgBox").hide();
+        $("#error").hide();
+
+        $('#enter').click(function() {
+            $("#msgBox").show();
+
+            
+            if($(pass).val() === "yara"){
+                $("#msgBox").show();
+                $("#passBoxHide").hide();
+            } else {
+                alert("Try Again");
+            }
+        })
+
+        var flag=true;
+        $('#submit').click(function(){
+            if(flag){
+    $('#ull').append(('<li>') + $('#name').val()+ " : "+ $('#message').val());
+    flag=!flag;
+}
+else{
+        $('#ull').append(('<li>') + $('#name').val()+ " : "+ $('#message').val());
+            flag=!flag;
+}
+})
+    </script>
+<script type="text/javascript" src="project.js"></script>
+
+</body>
+</html>
