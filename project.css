@@ -1,0 +1,43 @@
+body {
+	background-image:url("background.jpg");
+	background-size: cover;
+	width:auto;
+	height:auto;
+	background-repeat: no-repeat;
+}
+#header{
+text-align: center;
+font-size: 200px;
+margin-top: 200px;
+color: #6B8E23;
+font-family: Brush Script MT, Brush Script Std, cursive
+}
+
+#book{
+	width:1600px;
+	height:1600px;
+	opacity:.8;
+	margin-left:150px;
+
+
+}
+
+#ull {
+	text-align: left;
+}
+
+#wishesBook {
+	text-align: center;
+	background-image:url("book.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1100px;
+	width:  1500px;
+	/*position: absolute;*/
+}
+#boxes{
+position:absolute;
+}
+
+
+
